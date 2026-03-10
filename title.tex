@@ -1,0 +1,69 @@
+\begin{titlepage}
+
+%\SetWatermarkText{\includegraphics[width = 0.97\paperwidth,
+%height = 0.97\paperheight]{bia.png}}
+%\SetWatermarkAngle{0} 
+%\SetWatermarkText{\includegraphics[scale=1]{hust.png}}
+%\SetWatermarkAngle{0} 
+
+\begin{tikzpicture}[remember picture,overlay,inner sep=0,outer sep=0]
+     \draw[blue!70!black,line width=4pt] 
+     ([xshift=-1cm,yshift=-1cm]current page.north east) coordinate (A)--([xshift=1cm,yshift=-1cm]current page.north west) coordinate(B)--([xshift=1cm,yshift=1cm]current page.south west) coordinate (C)--([xshift=-1cm,yshift=1cm]current page.south east) coordinate(D)--cycle;
+
+     \draw ([yshift=0.5cm,xshift=-0.5cm]A)-- ([yshift=0.5cm,xshift=0.5cm]B)--
+     ([yshift=-0.5cm,xshift=0.5cm]B) --([yshift=-0.5cm,xshift=-0.5cm]B)--([yshift=0.5cm,xshift=-0.5cm]C)--([yshift=0.5cm,xshift=0.5cm]C)--([yshift=-0.5cm,xshift=0.5cm]C)-- ([yshift=-0.5cm,xshift=-0.5cm]D)--([yshift=0.5cm,xshift=-0.5cm]D)--([yshift=0.5cm,xshift=0.5cm]D)--([yshift=-0.5cm,xshift=0.5cm]A)--([yshift=-0.5cm,xshift=-0.5cm]A)--([yshift=0.5cm,xshift=-0.5cm]A);
+
+
+     \draw ([yshift=-0.3cm,xshift=0.3cm]A)-- ([yshift=-0.3cm,xshift=-0.3cm]B)--
+     ([yshift=0.3cm,xshift=-0.3cm]B) --([yshift=0.3cm,xshift=0.3cm]B)--([yshift=-0.3cm,xshift=0.3cm]C)--([yshift=-0.3cm,xshift=-0.3cm]C)--([yshift=0.3cm,xshift=-0.3cm]C)-- ([yshift=0.3cm,xshift=0.3cm]D)--([yshift=-0.3cm,xshift=0.3cm]D)--([yshift=-0.3cm,xshift=-0.3cm]D)--([yshift=0.3cm,xshift=-0.3cm]A)--([yshift=0.3cm,xshift=0.3cm]A)--([yshift=-0.3cm,xshift=0.3cm]A);
+
+\end{tikzpicture}
+
+\begin{center}
+    \vspace{7pt}
+    
+    \textbf{TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN, ĐHQG-HCM}
+    
+    \vspace{7pt}
+    \textbf{KHOA CÔNG NGHỆ THÔNG TIN}
+\end{center}
+\vspace{10pt}
+\begin{center}
+    \vspace{10pt}
+    \includegraphics[scale=0.3]{general/Logo_KHTN.png}
+    
+    \vspace{30pt}   
+    \fontsize{16pt}{15pt}\selectfont 
+    \textbf{Báo cáo} 
+    
+    \vspace{15pt}
+    \textbf{TIÊU ĐỀ}
+\end{center}
+\begin{center}
+    \vspace{5pt}
+    \fontsize{16pt}{15pt}\selectfont 
+    \textbf{\textrm{MÔN HỌC}}
+\end{center}
+
+\vspace{2pt}
+\begin{center}
+\begin{bfseries}Giảng viên hướng dẫn: \end{bfseries}\\
+\begin{bfseries}PGS.TS.\end{bfseries}\\
+
+\end{center}
+
+\vspace{10pt}
+
+\begin{center}
+\begin{tabular}{l c c}
+\textbf{Họ và tên} & \textbf{MSSV} & \textbf{Lớp} \\
+\hline
+Trần Cao Vân        & 23127141 & 23CLC \\
+\end{tabular}
+\end{center}
+
+\vspace{6pt}
+\begin{center}
+    \textbf{TP. Hồ Chí Minh, 2025}
+\end{center}
+\end{titlepage}

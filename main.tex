@@ -1,1 +1,104 @@
+\documentclass[a4paper]{article}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{tocloft}
+\usepackage{bm}
+\usepackage{forest}
+\usepackage{algorithm}
+\usepackage{tikz}
+\usepackage[super]{nth}
+\usepackage{algpseudocode}
+\usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=2cm]{geometry} 
+\usepackage{hyperref}
+\usepackage[T5]{fontenc} 
+\usepackage[utf8]{inputenc} 
+\usepackage[vietnamese]{babel}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+
+
+% \hypersetup{
+%     colorlinks=true,
+%     linkcolor=blue,
+%     filecolor=magenta,      
+%     urlcolor=cyan,
+%     pdftitle={Overleaf Example},
+%     pdfpagemode=FullScreen,
+%     }
+% \hypersetup{
+%     colorlinks=true,
+%     linkcolor=blue,
+%     citecolor=red,
+%     filecolor=magenta,
+%     urlcolor=cyan,
+%     pdftitle={Overleaf Example},
+%     pdfpagemode=FullScreen,
+% }
+% \hypersetup{
+%     colorlinks=false,
+%     hidelinks,
+%     pdftitle={Overleaf Example},
+%     pdfpagemode=FullScreen,
+% }
+
+\hypersetup{
+    colorlinks=false,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+
+
+\setlength{\parindent}{0pt}
+\usepackage{graphicx} 
+\usepackage{subcaption}
+%\usepackage{wallpaper}
+%\usepackage[firstpage]{draftwatermark} 
+\usepackage{xcolor}
+\usepackage{tikz} 
+\usepackage{scrextend}
+\changefontsizes{15pt}
+\usepackage{hyperref}
+\usepackage[backend=biber,style=numeric]{biblatex} % Use biblatex
+\addbibresource{references.bib}
+
+\usetikzlibrary{calc}
+
+\usepackage{fancyhdr}
+\usepackage{lipsum} % For generating dummy text
+
+% Setup for fancyhdr
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+% \fancyfoot[L]{\LaTeX \, by \href{}{}}
+\fancyfoot[R]{Trang \thepage}
+% \fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+\renewcommand{\headrulewidth}{1pt}
+
+\newcommand{\coursename}{MÔN HỌC}
+\newcommand{\reporttitle}{Tiểu luận}
+\lhead{\protect\reporttitle}
+
+\rhead{
+University of Science - VNU HCMC\\
+\coursename
+}
+
+\begin{document}
+
+
+\include{title.tex}
+
+\setlength{\parskip}{10pt}
+\setlength{\parindent}{10pt}
+\include{table-of-content.tex}
+% \include{table-of-picture.tex}
+
+\include{contents/section1}
+
+% Print the bibliography
+\printbibliography
+\end{document}
+
 
