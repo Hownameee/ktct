@@ -9,14 +9,12 @@
 \usepackage{tikz}
 \usepackage[super]{nth}
 \usepackage{algpseudocode}
-\usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=2cm]{geometry} 
+\usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{hyperref}
-\usepackage[T5]{fontenc} 
-\usepackage[utf8]{inputenc} 
+\usepackage[T5]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage[vietnamese]{babel}
 \usepackage{longtable}
-\usepackage[table]{xcolor}
-
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{tabularx}
 \usepackage{array}
@@ -24,7 +22,7 @@
 % \hypersetup{
 %     colorlinks=true,
 %     linkcolor=blue,
-%     filecolor=magenta,      
+%     filecolor=magenta,
 %     urlcolor=cyan,
 %     pdftitle={Overleaf Example},
 %     pdfpagemode=FullScreen,
@@ -53,22 +51,29 @@
 
 
 \setlength{\parindent}{0pt}
-\usepackage{graphicx} 
+\usepackage{graphicx}
 \usepackage{subcaption}
 %\usepackage{wallpaper}
-%\usepackage[firstpage]{draftwatermark} 
+%\usepackage[firstpage]{draftwatermark}
 \usepackage{xcolor}
-\usepackage{tikz} 
+\usepackage{tikz}
 \usepackage{scrextend}
 \changefontsizes{15pt}
 \usepackage{hyperref}
-\usepackage[backend=biber,style=numeric]{biblatex} % Use biblatex
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
 \addbibresource{references.bib}
+
+\DeclareFieldFormat{postnote}{tr.~#1}
+
+\DefineBibliographyStrings{english}{
+  urlseen = {truy cập},
+}
 
 \usetikzlibrary{calc}
 
 \usepackage{fancyhdr}
 \usepackage{lipsum} % For generating dummy text
+
 
 % Setup for fancyhdr
 \pagestyle{fancy}
@@ -99,11 +104,10 @@ University of Science - VNU HCMC\\
 % \include{table-of-picture.tex}
 
 \include{contents/section1}
+\include{contents/section4_vdtt.tex}
 
 \include{contents/section_bien_doi_gttd}
 
 % Print the bibliography
 \printbibliography
 \end{document}
-
-
